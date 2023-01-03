@@ -9,8 +9,23 @@
 </head>
 <body>
     <header class="bg-purple-300 h-12 w-full">Header<header>
-    <main class="bg-blue-500 w-full flex" style="height: calc(100vh - 100px);">
-        <nav class="bg-red-300 w-0 h-full lg:w-full h-full">menu</nav>
+    <main class="bg-blue-200 w-0 flex lg:w-full h-full" style="height: calc(100vh - 100px);">
+        <div class="drawer">
+            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+              <!-- Page content here -->
+              <label for="my-drawer" class="btn btn-primary drawer-button fa-sharp fa-solid fa-bars">Open drawer</label>
+            </div> 
+            <div class="drawer-side">
+              <label for="my-drawer" class="drawer-overlay"></label>
+              <ul class="menu p-4 w-80 bg-base-100 text-base-content">
+                <!-- Sidebar content here -->
+                <li><a>Sidebar Item 1</a></li>
+                <li><a>Sidebar Item 2</a></li>
+                
+              </ul>
+            </div>
+          </div>
         <section class="bg-green-400 w-0 h-full lg:w-full h-full">Section</section>
     </main>
    <footer class="bg-black h-12 w-full fixed-">end</footer>
